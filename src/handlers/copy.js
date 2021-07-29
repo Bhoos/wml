@@ -10,7 +10,7 @@ module.exports = function (config) {
 		for (var i in resp.files) {
 			var f = resp.files[i];
 			if (f.type === 'f') {
-				var src = path.join(config.src, f.name),
+				let src = path.join(config.src, f.name),
 				    dest = path.join(config.dest, f.name);
 
 				if (f.exists) {
