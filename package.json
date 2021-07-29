@@ -1,12 +1,11 @@
 {
-  "name": "wml",
-  "version": "0.0.0",
+  "name": "@bhoos/wml",
+  "version": "0.1.1",
   "description": "Replaces npm link with something that actually works!",
   "scripts": {
     "test": ":",
     "prepublish": ":",
-    "build": ":",
-    "release": "npm install wnpm-ci --no-save && wnpm-release -- --no-shrinkwrap"
+    "build": ":"
   },
   "bin": {
     "wml": "./src/cli/index.js"
@@ -16,7 +15,7 @@
   "preferGlobal": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wix/wml.git"
+    "url": "git+https://github.com/bhoos/wml.git"
   },
   "bugs": {
     "url": "https://github.com/wix/wml/issues"
@@ -39,6 +38,6 @@
     "eslint": "^2.11.1"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://npm.pkg.github.com/"
   }
 }
