@@ -15,8 +15,10 @@ module.exports = function (config) {
 
 				if (f.exists) {
 					console.log('[copy]', src, '->', dest);
-					fs.copy(src, dest).then(() => {
-						fs.chmod(dest, S_IRUSR | S_IRGRP | S_IROTH);
+					fs.copy(src, dest, (err) => {
+						if (!err) {
+							fs.chmod(dest, S_IRUSR | S_IRGRP | S_IROTH);
+						}
 					});
 				} else {
 					console.log('[delete]', dest);
