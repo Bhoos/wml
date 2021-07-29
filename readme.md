@@ -1,4 +1,8 @@
 # <img src="media/logo.png" width="72">
+> *BHOOS Changes*
+
+*Made files readonly on destination. At numerous occasions
+we changed file on the destination which got replaced when the actual source changed.*
 
 > Tangible symlinks
 
@@ -19,7 +23,7 @@ Note that since Wml is based on Watchman it **does not support symlinks**. lol.
 ## Install
 
 ```sh
-npm install -g wml
+yarn global add @bhoos/wml
 ```
 
 ## Usage
