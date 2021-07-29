@@ -1,6 +1,6 @@
 {
   "name": "@bhoos/wml",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Replaces npm link with something that actually works!",
   "scripts": {
     "test": ":",
